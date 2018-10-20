@@ -8,6 +8,7 @@
             <td>Departure date</td>
             <td>Arrival date</td>
             <td>Country</td>
+			<td>Sum</td>
          </thead>
          
          {% for row in rows %}
@@ -15,7 +16,8 @@
                <td>{{row["employee_id"]}}</td>
                <td>{{row["dep_date"]}}</td>
                <td> {{ row["arr_date"]}}</td>
-               <td>{{row['country_id']}}</td>	
+               <td>{{row['country_id']}}</td>
+			   <td>{{row['sum']}}</td>
             </tr>
          {% endfor %}
       </table>
